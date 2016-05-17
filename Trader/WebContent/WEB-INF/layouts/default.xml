@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="trader.base" template="/WEB-INF/templates/default.jsp">
+		<put-attribute name="includes" value=""></put-attribute>
+		<put-attribute name="title" value="Traders Homepage"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="home" extends="trader.base">
+		<put-attribute name="title" value="Trader Homepage"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/home.jsp"></put-attribute>
+	</definition>
+
+	<definition name="login" extends="trader.base">
+		<put-attribute name="title" value="Login"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/login.jsp"></put-attribute>
+	</definition>
+
+	<definition name="newaccount" extends="trader.base">
+		<put-attribute name="includes"
+			value="/WEB-INF/tiles/newaccountscript.jsp"></put-attribute>
+		<put-attribute name="title" value="Create Account"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/newaccount.jsp"></put-attribute>
+	</definition>
+
+	<definition name="accountcreated" extends="trader.base">
+		<put-attribute name="title" value="Account Created"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/accountcreated.jsp"></put-attribute>
+	</definition>
+
+	<definition name="admin" extends="trader.base">
+		<put-attribute name="title" value="Authorised Users Only!"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/admin.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="createInstrument" extends="trader.base">
+		<put-attribute name="title" value="Create Instrument"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/createInstrument.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="instrumentCreated" extends="trader.base">
+		<put-attribute name="title" value="Instrument Created"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/instrumentCreated.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="instruments" extends="trader.base">
+		<put-attribute name="title" value="Instruments"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/instruments.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="purchaseSummary" extends="trader.base">
+		<put-attribute name="title" value="Instruments Purchased"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/purchaseSummary.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="accountInfo" extends="trader.base">
+		<put-attribute name="title" value="Account Information"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/accountInfo.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="denied" extends="trader.base">
+		<put-attribute name="title" value="Access Denied"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/denied.jsp"></put-attribute>
+	</definition>
+
+	<definition name="error" extends="trader.base">
+		<put-attribute name="title" value="Error"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/error.jsp"></put-attribute>
+	</definition>
+
+
+	<definition name="loggedout" extends="trader.base">
+		<put-attribute name="title" value="Logged Out"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/loggedout.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>
+
+
+
+
+
+
